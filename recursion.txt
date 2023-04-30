@@ -1,0 +1,16 @@
+FUNCTION Sort(arr, n) 
+VAR
+i, compare, j:INTEGER
+BEGIN
+    for (i = 1; i < n; i++)
+        compare = arr[i]; 
+        j = i - 1; 
+   
+        while (j >= 0 && arr[j] > compare)
+        
+            arr[j + 1] = arr[j]; 
+            j = j - 1; 
+        arr[j + 1] = compare; 
+        end while
+    End for
+END
